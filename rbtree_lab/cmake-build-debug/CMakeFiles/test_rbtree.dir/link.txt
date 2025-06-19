@@ -1,0 +1,1 @@
+/usr/bin/cc -g "CMakeFiles/test_rbtree.dir/test/test-rbtree.c.o" CMakeFiles/test_rbtree.dir/src/rbtree.c.o -o test_rbtree 

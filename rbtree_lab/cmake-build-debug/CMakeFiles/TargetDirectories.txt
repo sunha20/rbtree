@@ -1,0 +1,4 @@
+/tmp/rbtree_lab/cmake-build-debug/CMakeFiles/rbtree_main.dir
+/tmp/rbtree_lab/cmake-build-debug/CMakeFiles/test_rbtree.dir
+/tmp/rbtree_lab/cmake-build-debug/CMakeFiles/edit_cache.dir
+/tmp/rbtree_lab/cmake-build-debug/CMakeFiles/rebuild_cache.dir

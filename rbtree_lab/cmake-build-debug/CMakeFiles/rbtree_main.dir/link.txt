@@ -1,1 +1,1 @@
-/usr/bin/cc -g CMakeFiles/rbtree_main.dir/src/driver.c.o CMakeFiles/rbtree_main.dir/src/rbtree.c.o -o rbtree_main 
+/usr/bin/cc  -Wall -g -DSENTINEL -g CMakeFiles/rbtree_main.dir/src/driver.c.o CMakeFiles/rbtree_main.dir/src/rbtree.c.o -o rbtree_main 

@@ -65,6 +65,16 @@ CMAKE_BINARY_DIR = /tmp/rbtree_lab/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
@@ -142,6 +152,67 @@ test_rbtree/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rbtree.dir/build.make CMakeFiles/test_rbtree.dir/build
 .PHONY : test_rbtree/fast
 
+#=============================================================================
+# Target rules for targets named visualize_rbtree
+
+# Build rule for target.
+visualize_rbtree: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 visualize_rbtree
+.PHONY : visualize_rbtree
+
+# fast build rule for target.
+visualize_rbtree/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/build
+.PHONY : visualize_rbtree/fast
+
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.o: rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.o
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.o
+
+# target to build an object file
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.o
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.o
+
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.i: rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.i
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.i
+
+# target to preprocess a source file
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.i
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.i
+
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.s: rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.s
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.s
+
+# target to generate assembly for a file
+rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.s
+.PHONY : rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.s
+
+rb-tree-visualizer/visualizer/test/visualize-main.o: rb-tree-visualizer/visualizer/test/visualize-main.c.o
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.o
+
+# target to build an object file
+rb-tree-visualizer/visualizer/test/visualize-main.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/visualize-main.c.o
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.c.o
+
+rb-tree-visualizer/visualizer/test/visualize-main.i: rb-tree-visualizer/visualizer/test/visualize-main.c.i
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.i
+
+# target to preprocess a source file
+rb-tree-visualizer/visualizer/test/visualize-main.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/visualize-main.c.i
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.c.i
+
+rb-tree-visualizer/visualizer/test/visualize-main.s: rb-tree-visualizer/visualizer/test/visualize-main.c.s
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.s
+
+# target to generate assembly for a file
+rb-tree-visualizer/visualizer/test/visualize-main.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/visualize-main.c.s
+.PHONY : rb-tree-visualizer/visualizer/test/visualize-main.c.s
+
 src/driver.o: src/driver.c.o
 .PHONY : src/driver.o
 
@@ -173,6 +244,7 @@ src/rbtree.o: src/rbtree.c.o
 src/rbtree.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree_main.dir/build.make CMakeFiles/rbtree_main.dir/src/rbtree.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rbtree.dir/build.make CMakeFiles/test_rbtree.dir/src/rbtree.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/src/rbtree.c.o
 .PHONY : src/rbtree.c.o
 
 src/rbtree.i: src/rbtree.c.i
@@ -182,6 +254,7 @@ src/rbtree.i: src/rbtree.c.i
 src/rbtree.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree_main.dir/build.make CMakeFiles/rbtree_main.dir/src/rbtree.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rbtree.dir/build.make CMakeFiles/test_rbtree.dir/src/rbtree.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/src/rbtree.c.i
 .PHONY : src/rbtree.c.i
 
 src/rbtree.s: src/rbtree.c.s
@@ -191,6 +264,7 @@ src/rbtree.s: src/rbtree.c.s
 src/rbtree.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rbtree_main.dir/build.make CMakeFiles/rbtree_main.dir/src/rbtree.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_rbtree.dir/build.make CMakeFiles/test_rbtree.dir/src/rbtree.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/visualize_rbtree.dir/build.make CMakeFiles/visualize_rbtree.dir/src/rbtree.c.s
 .PHONY : src/rbtree.c.s
 
 test/test-rbtree.o: test/test-rbtree.c.o
@@ -225,8 +299,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... rbtree_main"
 	@echo "... test_rbtree"
+	@echo "... visualize_rbtree"
+	@echo "... rb-tree-visualizer/visualizer/test/rbtree_visualizer.o"
+	@echo "... rb-tree-visualizer/visualizer/test/rbtree_visualizer.i"
+	@echo "... rb-tree-visualizer/visualizer/test/rbtree_visualizer.s"
+	@echo "... rb-tree-visualizer/visualizer/test/visualize-main.o"
+	@echo "... rb-tree-visualizer/visualizer/test/visualize-main.i"
+	@echo "... rb-tree-visualizer/visualizer/test/visualize-main.s"
 	@echo "... src/driver.o"
 	@echo "... src/driver.i"
 	@echo "... src/driver.s"

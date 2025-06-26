@@ -16,7 +16,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -32,7 +33,8 @@
 					"targetIndexes" : 
 					[
 						0,
-						1
+						1,
+						2
 					]
 				}
 			],
@@ -41,15 +43,22 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "rbtree_main::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-rbtree_main-Debug-763d28f10c4a8f200d46.json",
+					"jsonFile" : "target-rbtree_main-Debug-a926b13ab75334030d68.json",
 					"name" : "rbtree_main",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "test_rbtree::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-test_rbtree-Debug-42990a455fd97fad7cc9.json",
+					"jsonFile" : "target-test_rbtree-Debug-8f1db7a93bd85390289f.json",
 					"name" : "test_rbtree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "visualize_rbtree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-visualize_rbtree-Debug-e525bc0ef510a0cde222.json",
+					"name" : "visualize_rbtree",
 					"projectIndex" : 0
 				}
 			]

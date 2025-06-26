@@ -1,1 +1,1 @@
-/usr/bin/cc -g "CMakeFiles/test_rbtree.dir/test/test-rbtree.c.o" CMakeFiles/test_rbtree.dir/src/rbtree.c.o -o test_rbtree 
+/usr/bin/cc  -Wall -g -DSENTINEL -g "CMakeFiles/test_rbtree.dir/test/test-rbtree.c.o" CMakeFiles/test_rbtree.dir/src/rbtree.c.o -o test_rbtree 

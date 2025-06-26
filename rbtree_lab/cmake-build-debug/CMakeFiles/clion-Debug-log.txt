@@ -1,4 +1,4 @@
-/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /tmp/rbtree_lab -B /tmp/rbtree_lab/cmake-build-debug
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -S /tmp/rbtree_lab -B /tmp/rbtree_lab/cmake-build-debug
 CMake Deprecation Warning:
   Support for "Extra Generators" like
 
@@ -9,5 +9,5 @@ CMake Deprecation Warning:
 
 
 -- Configuring done (0.1s)
--- Generating done (0.3s)
+-- Generating done (0.7s)
 -- Build files have been written to: /tmp/rbtree_lab/cmake-build-debug

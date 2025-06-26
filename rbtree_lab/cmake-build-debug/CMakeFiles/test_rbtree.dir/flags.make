@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = 
+C_INCLUDES = -I/tmp/rbtree_lab/src
 
-C_FLAGS = -g -fdiagnostics-color=always
+C_FLAGS =  -Wall -g -DSENTINEL -g -fdiagnostics-color=always
 

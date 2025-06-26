@@ -56,3 +56,15 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# cmake
+**/cmake-build-debug/
+
+# clone한 디버깅 도구
+rbtree_lab/rb-tree-visualizer/
+
+# 원본 코드
+krafton_jungle_rbt/
+
+# ide
+**/.idea/

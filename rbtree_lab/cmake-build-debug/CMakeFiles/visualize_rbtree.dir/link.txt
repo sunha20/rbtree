@@ -1,1 +1,0 @@
-/usr/bin/cc  -Wall -g -DSENTINEL -g "CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/visualize-main.c.o" "CMakeFiles/visualize_rbtree.dir/rb-tree-visualizer/visualizer/test/rbtree_visualizer.c.o" CMakeFiles/visualize_rbtree.dir/src/rbtree.c.o -o visualize_rbtree 

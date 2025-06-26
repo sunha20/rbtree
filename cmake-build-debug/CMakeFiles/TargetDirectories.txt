@@ -1,2 +1,0 @@
-/tmp/rbtree_lab_docker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/tmp/rbtree_lab_docker/cmake-build-debug/CMakeFiles/edit_cache.dir
